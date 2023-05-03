@@ -1,2 +1,2 @@
 #!/bin/bash
-
+fold -w1 < "${1:-/dev/stdin}" | paste - - - - - - - - | cut -f1 | tr -d '\n'; echo
